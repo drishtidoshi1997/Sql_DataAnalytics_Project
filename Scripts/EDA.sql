@@ -6,7 +6,7 @@ SELECT * FROM INFORMATION_SCHEMA.TABLES;
 -- Explore all columns in the Database
 SELECT * FROM INFORMATION_SCHEMA.COLUMNS
 WHERE TABLE_NAME = 'dim_customers';
-
+[gold].[fact_sales]
 -- Explore Dimensions
 SELECT DISTINCT country FROM gold.dim_customers;
 SELECT DISTINCT category, subcategory, product_name FROM gold.dim_products
